@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Group'em</title>
+  </head>
+  <body>
+    <div class="description">
+      How to use:
+      <br>1. add names one by one or in bulk(separate each name with a space)
+      <br>2. keep each name as a single word i.e. johnDoe
+      <br>3. members per sub-group needs to be a factor of the overall group size
+      <br><br>Daphne WeiLong Joel Kellyn Izhar HuiYun Shujun Samuel Mervin Gavin Amir
+      Tyler Leon Firdaus Peter
+    </div>
+    <br /><br />
+    <!-- Input field for new names-->
+    <div class="inputContainer">
+      <form id="form">
+        <label for="namesInput">Enter name:</label>
+        <input id="namesInput" type="" />
+        <button class="btn btn-primary" id="addToDisplay">Add</button>
+      </form>
+    </div>
+    <br />
+    <!-- Display section of current added names and delete button for each name -->
+    <div class="container displaySection">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!-- Input field for subgroup size-->
+    <div class="subGroupSizeContainer">
+      <input id="subGroupSize" type="number" />
+      <p>Members per Sub-Group</p>
+    </div>
+    <!--- Generate Sub-Groups button -->
+    <div class="generateBtnContainer">
+      <button class="btn btn-success" id="generateBtn">Generate Session</button>
+    </div>
+    <div class="bottomDisplaySection"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

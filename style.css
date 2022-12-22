@@ -1,0 +1,51 @@
+.container {
+  height: 17em;
+  width: 50em;
+  overflow-y: scroll;
+}
+
+.inputContainer {
+  text-align: center;
+}
+
+.generateBtnContainer {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.subGroupSizeContainer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#subGroupsDisplay {
+  text-align: center;
+}
+
+.namesInSubGroups {
+  margin: 0;
+}
+
+.subGroupSession {
+  margin: auto;
+}
+
+.session {
+  margin-bottom: 50px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottomDisplaySection {
+  text-align: center;
+  border: solid;
+}
+
+.description {
+  margin-left: 5em;
+  margin-top: 2em;
+}
