@@ -83,7 +83,7 @@ function generateSubGroupsClicked() {
 }
 
 function randomiseNames(arr, divider, subGroupsNum) {
-  if (subGroupSize <= subGroupsRequired && subGroupSize % overallGroupSize === 0) {
+  if ((subGroupSize <= subGroupsRequired) && (overallGroupSize % subGroupSize === 0 )) {
     // shuffles the array of submitted names
     let shuffled = arr.sort(() => Math.random() - 0.5);
     // console.log(shuffled);
